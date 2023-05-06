@@ -1,0 +1,25 @@
+.container{
+  width: 100%;
+  display: flex;
+
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.info h1{
+  color: #DC3C57;
+  font-size: 25px;
+}
+
+.info span{
+  font-size: 10px;
+}
