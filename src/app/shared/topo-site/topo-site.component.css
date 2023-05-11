@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  width: 40%;
+  margin: auto;
 }
 
 .container_img{
@@ -21,15 +23,26 @@
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
 }
 
+.info-topo_info-sorteio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .container_info-topo span{
   display: flex;
   background-color: #DC3C57;
   padding-left: 10px;
   padding-right: 10px;
+  width: 200px;
   color:#fff;
+
   border-radius: 120px;
   justify-content: center;
 }

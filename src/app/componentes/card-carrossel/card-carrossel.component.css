@@ -1,0 +1,26 @@
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #DC3C57;
+  }
+
+.container_carrossel{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #DC3C57;
+  font-weight: 600;
+  padding: 6px;
+
+}
+
+
+.container h1{
+  width: 100%;
+  background-color: #DC3C57;
+  color: #fff;
+  text-align: center;
+}

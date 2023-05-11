@@ -1,10 +1,11 @@
 .container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
+
 }
 
 .container_info{
@@ -14,9 +15,23 @@
   align-items: center;
   text-align: center;
 }
+
+
+.container_carrossel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container_carrossel p{
+  font-size: 24px;
+}
+
 .container_info h1{
   color: #DC3C57;
-;
 }
 
 
@@ -33,3 +48,5 @@
 .container_icon-seta{
   width: 80px;
 }
+
+

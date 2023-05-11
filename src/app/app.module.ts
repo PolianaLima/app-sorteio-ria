@@ -7,6 +7,9 @@ import { ContentAppComponent } from './componentes/content-app/content-app.compo
 import { CarrosselInfoComponent } from './componentes/carrossel-info/carrossel-info.component';
 import { NumerosSorteioComponent } from './componentes/numeros-sorteio/numeros-sorteio.component';
 import { TopoSiteComponent } from './shared/topo-site/topo-site.component';
+import { CardCarrosselComponent } from './componentes/card-carrossel/card-carrossel.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { TopoSiteComponent } from './shared/topo-site/topo-site.component';
     CarrosselInfoComponent,
     NumerosSorteioComponent,
     TopoSiteComponent,
+    CardCarrosselComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

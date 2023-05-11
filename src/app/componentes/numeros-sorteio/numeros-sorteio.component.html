@@ -1,9 +1,71 @@
 <div class="container">
 
-  <ul>
-    <li *ngFor="let n of numerosSorteio">{{n}}</li>
-  </ul>
+  <div class="container_options">
+    <div class="option_button" *ngFor="let n of numerosSorteio">
+      <input type="button"  name=" {{n.numero}}" value="{{n.numero}}" [disabled]="statusButton" class="{{n.status}}" (click)="selecionarNumero($event.target, n.numero, n.id)"  />
 
-  <button>ENVIAR NUMEROS ESCOLHIDOS</button>
+    </div>
+  </div>
 
+  <input  type="button"  class="enviar" value="ENVIAR NUMEROS ESCOLHIDOS" (click)="concluirSelecao()"/>
+
+
+  <!-- modal do mensagem ao usuario apos  de envio de dados -->
+  <div *ngIf="statusMensagem" class="mensagem-usario">
+    <div class="mensagem">
+      <p>{{mensagem}}</p>
+      <p class="btn_ok" (click)="fecharMensagem()">OK</p>
+    </div>
+  </div>
+  <!-- modal tooltip enviar dados sem numeros selecionados -->
+
+  <div *ngIf="statusModalErro" class="erro_enviar-numeros">
+    <div class="mensagem-erro">
+      <span><p (click)="fecharErroSelecionandoNumeros()">X</p></span>
+      <p>Selecione 01 ou mais numeros para participar!!</p>
+    </div>
+  </div>
+
+  <!-- modal do form de envio de dados -->
+  <div *ngIf="statusForm" class="tooltip">
+
+    <div class="container_form">
+      <div class="container_tooltip">
+        <p class="tooltip_fechar" (click)="fecharToltip()">X</p>
+      </div>
+
+      <h3>Preencha seus dados</h3>
+      <form  (ngSubmit)="enviarDadosSelecionados()" class="form-group">
+        <input
+              type="text"
+              name="name"
+              [placeholder]="campoNomePlaceholder"
+              [(ngModel)]="name"
+              [ngClass]="erroCampoFormulario"
+        >
+        <input
+              type="text"
+              name="telefone"
+              [placeholder]="campoTelefonePlaceholder"
+              [(ngModel)]="telefone"
+              [ngClass]="erroCampoFormulario"
+        >
+        <div class="btn_tooltipForm">
+          <button type="submit">Enviar dados</button>
+          <button (click)="fecharToltip()">Cancelar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
