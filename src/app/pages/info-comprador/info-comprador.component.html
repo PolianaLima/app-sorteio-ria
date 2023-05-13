@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="container_pesquisa" *ngIf="statusButtonPesquisa">
+
+    <div class="pesquisa_form">
+      <a routerLink="/" class="pesquisa_fechar">X</a>
+      <input
+      type="text"
+      [(ngModel)]="telefone"
+      placeholder="Digite o numero do celular">
+
+      <input type="button" value="OK" (click)="pesquisar()" >
+      <div class="mensagem_busca">
+        <p > {{mensagem}}</p>
+        <a routerLink="/">{{link}}</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container_numeros" *ngIf="statusRes">
+    <h1>Olá,  {{nome}}</h1>
+    <h3>Numeros escolhidos:</h3>
+    <ul class="numeros_adquiridos">
+      <li class="numero" *ngFor="let numero of results" >{{numero.numero}}</li>
+    </ul>
+  </div>
+
+  <app-card-carrossel></app-card-carrossel>
+
+  <span>Deseja escolher mais numero?</span>
+  <a routerLink="/"> Clique Aqui</a>
+</div>

@@ -10,6 +10,9 @@ import { TopoSiteComponent } from './shared/topo-site/topo-site.component';
 import { CardCarrosselComponent } from './componentes/card-carrossel/card-carrossel.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
+import { InfoCompradorComponent } from './pages/info-comprador/info-comprador.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     NumerosSorteioComponent,
     TopoSiteComponent,
     CardCarrosselComponent,
+    HomeComponent,
+    InfoCompradorComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

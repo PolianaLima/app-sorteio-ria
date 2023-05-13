@@ -1,0 +1,125 @@
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border: 3px solid #DC3C57;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form h2{
+  color: #DC3C57;
+  margin-bottom: 20px;
+}
+
+
+.form input{
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form input[type=button]{
+  background-color: #DC3C57;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tooltip{
+  color: red;
+  font-weight: 600;
+}
+
+
+/*SORTEIO*/
+
+.content{
+  width: 100%;
+}
+
+.sorteio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #DC3C57;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.sorteio h1{
+  cursor: pointer;
+}
+
+.resultado{
+  width: 500px;
+  height: 200px;
+  border: 5px solid #DC3C57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #DC3C57;
+  margin: auto;
+  margin-bottom: 30px;
+
+}
+
+.resultado h3{
+  font-size: 30px;
+}
+
+.resultado p{
+  font-size: 25px;
+}
+
+/*Lista de numeros*/
+.content_listaNumeros{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content_listaNumeros li{
+  display: flex;
+  list-style: none;
+}
+
+
+.content_listaNumeros h3{
+  color:#7A2A4F ;
+  font-weight: 500;
+}
+
+.numeros_vendidos{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.numero{
+  list-style: none;
+  padding: 10px 20px;
+  background: #DC3C57;
+  border-radius: 3px;
+  color: #fff;
+  margin: 1px;
+}

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  width: 40%;
+  width: 100%;
   margin: auto;
 }
 
@@ -56,4 +56,25 @@
 .container_info-topo img{
   width: 30px;
   margin-left: 20px;
+}
+
+
+.login-admin{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-admin a{
+  background: #DC3C57;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
 }

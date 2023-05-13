@@ -1,0 +1,131 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_pesquisa{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 55, 0.9);
+  width: 40%;
+  margin: auto;
+}
+
+
+.pesquisa_form{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border: 3px solid #DC3C57;
+  border-radius: 10px;
+
+}
+
+
+.pesquisa_fechar{
+  background: #fff;
+  color: #DC3C57;
+  padding: 10px 20px;
+  position: relative;
+  top:-9%;
+  left: 49%;
+  font-weight: bolder;
+  border: 3px solid #DC3C57;
+  border-radius: 10px;
+
+}
+
+.pesquisa_form input{
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.pesquisa_form input[type=button]{
+  background: #DC3C57;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.pesquisa_form input[type=button]:hover{
+  background: #7A2A4F;
+}
+
+.pesquisa_form input[type=button]:active{
+  position: relative;
+  top:1px;
+}
+
+.mensagem_busca {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color:#7A2A4F;
+
+}
+.mensagem_busca a{
+ font-weight: bolder;
+}
+
+.container_numeros{
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.container_numeros h1{
+  color: #DC3C57;
+  font-size: 25px;
+}
+
+.container_numeros h3{
+  color:#7A2A4F ;
+  font-weight: 500;
+}
+
+.numeros_adquiridos{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.numero{
+  list-style: none;
+  padding: 10px 20px;
+  background: #DC3C57;
+  border-radius: 3px;
+  color: #fff;
+  margin: 1px;
+}
+
+.container span{
+  font-size: 22px;
+  color: #7A2A4F;
+}
+
+.container a{
+  color: red;
+  font-size: 20px;
+}
+
+

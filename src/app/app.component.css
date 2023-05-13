@@ -1,9 +1,9 @@
-.container-page{
-  width: 40%;
+.container_content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  width: 40%;
 }
 .page-img{
   max-width: 400px;

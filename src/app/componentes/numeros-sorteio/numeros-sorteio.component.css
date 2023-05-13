@@ -29,6 +29,16 @@
   cursor: pointer;
 }
 
+
+.S{
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background: #ED9B4A;
+  cursor: pointer;
+}
+
 .I{
   width: 100%;
   border: none;
@@ -69,7 +79,7 @@ input:disabled{
 }
 
 /*modal tooltip enviar dados sem numeros selecionados*/
-.erro_enviar-numeros{
+.tooltip{
   position: absolute;
   top: 0;
   right: 0;
@@ -83,7 +93,7 @@ input:disabled{
   margin: auto;
 }
 
-.mensagem-erro{
+.tooltip_mensagem{
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -97,13 +107,13 @@ input:disabled{
   border-radius: 20px;
 }
 
-.mensagem-erro span{
+.tooltip_mensagem span{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.mensagem-erro span p{
+.tooltip_mensagem span p{
   background: #fff;
   color: #DC3C57;
   padding: 5px 10px;
@@ -112,20 +122,6 @@ input:disabled{
 }
 
 /* CONFIGURANDO O FORM TOOLTIP DE ENVIO DE DADOS*/
-.tooltip{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(77, 77, 77, 0.9);
-  width: 40%;
-  margin: auto;
-}
 
 .container_form{
   display: flex;
@@ -215,7 +211,6 @@ input:disabled{
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: rgba(77, 77, 77, 0.9);
   width: 40%;
   margin: auto;

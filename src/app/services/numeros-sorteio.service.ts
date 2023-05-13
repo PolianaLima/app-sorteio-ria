@@ -12,7 +12,7 @@ export class NumerosSorteioService {
   arrayData: DataSorteio | any;
 
   constructor(private http: HttpClient) {
-    this.baseUrl = '../../../data/sorteio_data.json';
+    this.baseUrl = 'http://localhost:3000/numeros';
   }
 
   getNumeros():Observable<DataSorteio> {
@@ -20,8 +20,25 @@ export class NumerosSorteioService {
     this.arrayData = this.http.get<DataSorteio>(`${this.baseUrl}`)
     return this.arrayData;
 
-    console.log(this.baseUrl);
+  }
 
+  getNumerosPorTelefone(telefone: string):Observable<DataSorteio> {
+    this.arrayData = this.http.get<DataSorteio>(`${this.baseUrl}?telefone=${telefone}`)
+    return this.arrayData;
+
+  }
+
+
+  getNumerosPorStatus(status: string):Observable<DataSorteio> {
+    this.arrayData = this.http.get<DataSorteio>(`${this.baseUrl}?status=${status}`)
+    return this.arrayData;
+
+  }
+
+  putNumeros(id:number, numeros:{}): Observable<DataSorteio> {
+    this.arrayData = this.http.put<DataSorteio>(`${this.baseUrl}/${id}`, numeros)
+
+    return this.arrayData;
   }
 
 }

@@ -50,3 +50,12 @@
 }
 
 
+.container_numeros-comprados{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: #DC3C57;
+  text-align: center;
+}
+

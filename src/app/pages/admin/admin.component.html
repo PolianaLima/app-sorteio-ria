@@ -1,0 +1,48 @@
+
+<div class="container" >
+
+  <div class="form" *ngIf="statusForm">
+    <h2>Area restrista</h2>
+    <input
+    type="text"
+    placeholder="Digite um usuario"
+    [(ngModel)]="usuario"
+    >
+    <input
+    type="password"
+    placeholder="Digite uma senha"
+    [(ngModel)]="senha"
+    >
+    <input type="button" value="LOGIN" (click)="login()">
+
+    <div class="tooltip" *ngIf="statusTooltip">
+      <p>
+      Usuário ou Senha Invalida!!
+      </p>
+    </div>
+  </div>
+
+  <div class="content" *ngIf="statusPageAdmin">
+    <div class="content_sorteio">
+      <div class="sorteio" *ngIf="statusBtnSorteio" >
+        <H1 (click)="sortear()">SORTEAR<br/> NUMERO</H1>
+      </div>
+      <div class="resultado" *ngIf="statusResultadoSorteio" >
+        <h3>Número Sorteado: {{numeroSorteado}}</h3>
+        <p>Parabéns {{nomeSorteado}}!!</p>
+      </div>
+
+    </div>
+
+    <div class="content_listaNumeros" >
+      <h3>Lista de Numeros vendidos</h3>
+
+      <ul class="numeros_vendidos">
+        <li class="numero" *ngFor="let n of results">{{n.numero}}</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>

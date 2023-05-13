@@ -1,5 +1,5 @@
-export type DataSorteio = {
-  numeros: [
+export type DataSorteio =
+  [
     {
       id: number;
       numero: number;
@@ -7,5 +7,8 @@ export type DataSorteio = {
       name_comprador: string;
       telefone: string
     }
-  ]
-}
+]
+
+
+
+
